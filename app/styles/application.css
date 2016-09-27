@@ -26,3 +26,27 @@ a:hover {
   color: #27552e;
   border-bottom: 1px solid #27552e;
 }
+
+.list-cust .list-group-item:first-child {
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+.list-cust .list-group-item:last-child {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.list-cust .list-group-item {
+  border-right:0px;
+  border-left:0px;
+  background-color: #cccccc;
+  cursor: pointer;
+}
+
+.list-cust .list-group-item:hover {
+  background-color: #E2E2E2;
+}
+.list-cust .list-group-item.completed
+{
+  background-color: #E2E2E2 !important;
+}

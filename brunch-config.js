@@ -19,6 +19,12 @@ module.exports = {
       Backbone: 'backbone',
       _: 'underscore',
       stringUtil: 'underscore.string'
+    },
+    styles: {
+      bootstrap: ['dist/css/bootstrap.min.css', 'dist/css/bootstrap-theme.min.css']
+    },
+    javascripts: {
+      bootstrap: ['dist/js/bootstrap.min.js']
     }
   },
   plugins: {

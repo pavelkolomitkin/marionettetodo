@@ -1,1 +1,4 @@
-<label><input type="checkbox" /><span><%- title %></span></label>
+<label><input type="checkbox" <% if (isCompleted) { %> checked="checked" <% }%> />
+<span style="text-decoration: <% if (isCompleted) { %>line-through<% } else {%>none<% } %>"><%- title %></span></label>
+<a href="#" class="btn btn-danger" style="float:right;">Remove</a>
+<br />
