@@ -7,11 +7,13 @@ export default Marionette.View.extend({
 
     ui: {
         checkBox: 'input[type="checkbox"]',
-        text: 'label span'
+        text: 'label span',
+        deleteButton: '[data-role="delete"]'
     },
 
     triggers: {
-        'change @ui.checkBox': 'change:completed'
+        'change @ui.checkBox': 'change:completed',
+        'click @ui.deleteButton': 'delete'
     },
     events: {
         'click': 'onSelfClick'
@@ -54,5 +56,9 @@ export default Marionette.View.extend({
         this.ui.checkBox.prop('checked', this.model.get('isCompleted'));
         this.updateCssContainer();
         this.render();
+    },
+
+    onDelete: function () {
+        this.model.destroy();
     }
 });
